@@ -1,73 +1,35 @@
-import Image from "next/image";
+"use client"
+
 import React from "react";
 import { Heading } from "./Heading";
-import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 
 export const TechStack = () => {
-  const stack = [
-    {
-      title: "Next.js",
-      src: "/images/logos/next.png",
-
-      className: "h-10 w-14",
-    },
-    {
-      title: "AWS",
-      src: "/images/logos/aws.webp",
-
-      className: "h-10 w-10",
-    },
-    {
-      title: "Figma",
-      src: "/images/logos/figma.png",
-
-      className: "h-10 w-8",
-    },
-    {
-      title: "Framer Motion",
-      src: "/images/logos/framer.webp",
-
-      className: "h-10 w-10",
-    },
-    {
-      title: "Node",
-      src: "/images/logos/node.png",
-
-      className: "h-10 w-12",
-    },
-    {
-      title: "Tailwind",
-      src: "/images/logos/tailwind.png",
-
-      className: "h-10 w-24",
-    },
-    {
-      title: "Vercel",
-      src: "/images/logos/vercel.png",
-
-      className: "h-10 w-24",
-    },
+  const skills = [
+    'HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Node.js', 'Express', 'MongoDB',
+    'Python', 'Numpy', 'Pandas', 'Matplotlib', 'MySQL', 'Tailwind CSS', 'Framer Motion', 'Git', 'GitHub'
   ];
   return (
-    <div>
-      <Heading
-        as="h2"
-        className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 0.8 }}
+        className="max-w-4xl mx-auto mt-16"
       >
-        Tech Stack
-      </Heading>
-      <div className="flex flex-wrap">
-        {stack.map((item) => (
-          <Image
-            src={item.src}
-            key={item.src}
-            width={`200`}
-            height={`200`}
-            alt={item.title}
-            className={twMerge("object-contain mr-4 mb-4", item.className)}
-          />
-        ))}
-      </div>
-    </div>
+        <span className="text-4xl">🛠️</span>
+        <Heading className="text-2xl md:text-3xl font-semibold mb-6">Skills</Heading>
+        <div className="flex flex-wrap gap-3">
+          {skills.map(skill => (
+            <span
+              key={skill}
+              className="bg-light text-text-primary border border-border-primary 
+              px-4 py-2 rounded-full shadow-md text-sm font-medium transition-colors 
+              duration-200 hover:bg-primary hover:text-light"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </motion.section>
   );
 };

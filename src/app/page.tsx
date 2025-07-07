@@ -4,17 +4,21 @@ import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
 import { Products } from "@/components/Products";
 import { TechStack } from "@/components/TechStack";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <Container>
       <span className="text-4xl">👋</span>
-      <Heading className="font-black">Hello there! I&apos;m John</Heading>
+      <Heading className="">Hello there! I&apos;m Sumit Frontend Developer</Heading>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m a full-stack developer that loves{" "}
+        I&apos;m a frontend developer that loves{" "}
         <Highlight>building products</Highlight> and web apps that can impact
-        millions of lives
+        the user experience. I&apos;m passionate about{" "}
+        <Highlight>creating beautiful and performant web applications</Highlight>{" "}
+        that solve real-world problems. I enjoy working with{" "}
+        <Highlight>modern web technologies</Highlight> and always strive to
+        learn and improve my skills.
+
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
         I&apos;m a senior software engineer with{" "}
@@ -32,3 +36,5 @@ export default function Home() {
     </Container>
   );
 }
+
+

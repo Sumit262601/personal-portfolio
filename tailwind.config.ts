@@ -12,14 +12,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
+      backgroundColor: {
+        primary: "var(--primary, #1F2A24)",
+        secondary: "var(--secondary, #5B7768)",
+        light: "var(--light, #DAE3D7)",
       },
       colors: {
-        primary: "var(--neutral-700)",
-        secondary: "var(--neutral-500)",
+        primary: "var(--primary, #1F2A24)",
+        secondary: "var(--secondary, #5B7768)",
+        light: "var(--light, #DAE3D7)",
       },
     },
   },
@@ -32,6 +38,12 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
+
+
+   // Add your custom variables
+  newVars["--primary"] = "#1F2A24";
+  newVars["--secondary"] = "#5B7768";
+  newVars["--light"] = "#DAE3D7";
 
   addBase({
     ":root": newVars,
