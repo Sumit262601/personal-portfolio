@@ -42,47 +42,23 @@ export default function About() {
 
       <div className="max-w-4xl">
         <Paragraph className=" mt-4">
-          Hey there, I&apos;m John Doe - a passionate developer, avid writer,
-          and a connoisseur of awesome design. Welcome to my corner of the
-          digital world!
+          Hey there, I&apos;m Sumit Kumar — a passionate frontend developer, curious tech explorer, and a firm believer in the power of clean design.
         </Paragraph>
         <Paragraph className=" mt-4">
-          Since the early days of my journey, I&apos;ve been captivated by the
-          art of crafting exceptional digital experiences. As a developer, I
-          thrive on turning lines of code into functional and elegant solutions.
-          My goal is to not just create software, but to build digital marvels
-          that seamlessly merge form and function.
+          Since the beginning of my journey, I&apos;ve been fascinated by how code can bring ideas to life. I specialize in crafting intuitive, responsive, and modern web experiences using technologies like ReactJS, Tailwind CSS, Node.js, MongoDB, and more. 
         </Paragraph>
 
         <Paragraph className=" mt-4">
-          But my journey doesn&apos;t stop at coding. With a heart full of words
-          and a mind brimming with ideas, I&apos;ve ventured into the realm of
-          writing. From tech articles that unravel complex concepts to creative
-          tales that ignite the imagination, I weave words to inform, entertain,
-          and inspire.
+          But my story isn&apos;t just about code. I&apos;m also a lifelong learner and a creative thinker who enjoys exploring new technologies, solving real-world problems, and writing about what I discover. From building a YouTube video downloader in Python to creating blog and note management platforms, I love turning challenges into opportunities to grow.
         </Paragraph>
         <Paragraph className=" mt-4">
-          What sets me apart is my unwavering appreciation for design. I believe
-          that aesthetics and usability go hand in hand. My eye for awesome
-          design ensures that every project I undertake not only works
-          flawlessly under the hood but also looks stunning on the surface.
+          Design plays a huge role in everything I do. For me, great design is not just about colors and layouts — it’s about user experience, accessibility, and clarity. I strive to blend logic with creativity to build interfaces that are both functional and beautiful.
         </Paragraph>
         <Paragraph className=" mt-4">
-          Through this website, I aim to share my insights, experiences, and
-          creations with you. Whether you&apos;re a fellow developer seeking
-          solutions, a fellow writer in search of inspiration, or simply someone
-          who appreciates the finer aspects of design, there&apos;s something
-          here for you.
+          This website is where I share my journey, projects, and insights. Whether you&apos;re a fellow developer, a designer, or just someone passionate about tech, there’s something here for you.
         </Paragraph>
         <Paragraph className=" mt-4">
-          Join me on this journey of bytes and narratives, logic and creativity,
-          code and prose. Together, we can explore the boundless possibilities
-          of technology and storytelling, all while reveling in the sheer beauty
-          of thoughtful design.
-        </Paragraph>
-        <Paragraph className=" mt-4">
-          Thank you for being here, and I can&apos;t wait to embark on this
-          adventure with you.
+          Thank you for visiting, and I&apos;m excited to have you along for the ride!
         </Paragraph>
       </div>
     </div>
